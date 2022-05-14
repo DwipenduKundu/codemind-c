@@ -1,16 +1,19 @@
 #include<stdio.h>
-main()
-{int n,m,temp,a,b=0;
-scanf("%d",&n);
-m=n*n;
-temp=m;
-while(m!=0)
-{a=m%10;
-m=m/10;
-b+=a;
-}
-if(b==n)
-printf("Neon Number");
-else
-printf("Not Neon Number");
+#include<math.h>
+int main()
+{
+    int n,i,temp,a,b,count=0;
+    scanf("%d",&n);
+    temp=b=n*n;
+    while(b!=0)
+    {
+        a=b%10;
+        b=b/10;
+        count+=a;
+    }
+    if(n==count)
+    printf("Neon Number");
+    else
+    printf("Not Neon Number");
+    return 0;
 }

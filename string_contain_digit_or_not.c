@@ -3,9 +3,8 @@ int main()
 {
     char s[20];
     int i,count=0;
-    scanf("%[^
-]s", s);
-    for(i=0;s[i]!=NULL;i++)
+    scanf("%[^\n]s", s);
+    for(i=0;s[i]!='\0';i++)
     {
         if(s[i]>='0'&&s[i]<='9')
         count++;

@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,count=0;
-    char j;
+    int n,i,j;
     scanf("%d",&n);
-    for(j='A';j<='Z';j++)
+    for(i=1;i<=n;i++)
     {
-        for(i=1;i<=n;i++)
+        for(j=1;j<=n;j++)
         {
-            printf("%c ",j);
+            if(j==i||j==n||j==1)
+            {printf("*");
+            printf(" ");}
+            else
+            printf("  ");
         }
         printf("
 ");
-        count++;
-        if(count==n)
-        break;
     }
     return 0;
 }
